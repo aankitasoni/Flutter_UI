@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             SizedBox(
-              height: 860,
+              height: 800,
               child: ListView.builder(
                 itemCount: days.length,
                 physics: const BouncingScrollPhysics(),

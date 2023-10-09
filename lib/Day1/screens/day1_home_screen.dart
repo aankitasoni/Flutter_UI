@@ -64,7 +64,7 @@ class _Day1HomeScreenState extends State<Day1HomeScreen> {
                       height: 20.0,
                     ),
                     SizedBox(
-                      height: 220,
+                      height: 260,
                       child: SingleChildScrollView(
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),

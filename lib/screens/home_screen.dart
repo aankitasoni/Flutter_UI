@@ -101,7 +101,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontWeight: FontWeight.bold,
                               fontSize: 22,
                               fontFamily: 'serif',
-
                             ),
                           ),
                         ),

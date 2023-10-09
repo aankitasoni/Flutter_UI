@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'day1_content_screen.dart';
+import '../models/day1_content_screen.dart';
 
 class Day1HomeScreen extends StatefulWidget {
   const Day1HomeScreen({super.key});
@@ -43,51 +43,52 @@ class _Day1HomeScreenState extends State<Day1HomeScreen> {
                 });
               },
               itemBuilder: (_, i) {
-                return Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Column(
-                    children: [
-                      Image(
-                        fit: BoxFit.cover,
-                        image: AssetImage(
-                          contents[i].image,
-                        ),
-                        // height: 200,
-                        // width: 250,
+                return Column(
+                  children: [
+                    Image(
+                      fit: BoxFit.cover,
+                      image: AssetImage(
+                        contents[i].image,
                       ),
-                      Text(
-                        contents[i].title,
-                        style: const TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      height: 225,
+                      width: 225,
+                    ),
+                    Text(
+                      contents[i].title,
+                      style: const TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
                       ),
-                      const SizedBox(
-                        height: 20.0,
-                      ),
-                      Flexible(
-                        child: Text(
-                          contents[i].description,
-                          style: const TextStyle(
-                            fontSize: 18,
-                            color: Colors.grey,
+                    ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    SizedBox(
+                      height: 220,
+                      child: SingleChildScrollView(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Text(
+                            contents[i].description,
+                            style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.grey,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
-                          textAlign: TextAlign.center,
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 );
               },
             ),
           ),
-          Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(
-                contents.length,
-                (index) => buildDot(index, context),
-              ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: List.generate(
+              contents.length,
+              (index) => buildDot(index, context),
             ),
           ),
           Container(

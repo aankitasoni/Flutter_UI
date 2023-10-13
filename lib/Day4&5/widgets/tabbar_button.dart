@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/Day4&5/assets/color.dart';
+import 'package:flutter_ui_challenges/Day4&5/assets/text_style.dart';
+import 'package:flutter_ui_challenges/Day4&5/data/tabbar_menu.dart';
 
 class TabBarButton extends StatefulWidget {
   const TabBarButton({super.key});
@@ -9,24 +11,33 @@ class TabBarButton extends StatefulWidget {
 }
 
 class _TabBarButtonState extends State<TabBarButton> {
+  int id = 0;
   @override
   Widget build(BuildContext context) {
-    int id = 0;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        for (int i =0; i <4; i++)
+        for (int i = 0; i < tabMenu.length; i++)
           InkWell(
             splashColor: Colors.transparent,
+            onTap: () {
+              setState(() {
+                id = tabMenu[i].id;
+              });
+            },
             child: Container(
               height: 40.0,
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               decoration: BoxDecoration(
-                color: grey,
+                color: id == i ? grey : Colors.transparent,
                 borderRadius: BorderRadius.circular(50.0),
               ),
               child: Center(
-                child: Text('ds'),
+                child: Text(
+                  tabMenu[i].name,
+                  style: id == i ? tabButtonS : tabButtonU,
+                ),
               ),
             ),
           ),

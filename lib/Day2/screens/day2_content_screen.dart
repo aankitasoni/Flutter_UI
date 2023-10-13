@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_ui_challenges/Day2/models/day2_custom_suffix_icon.dart';
 
 
 class Body extends StatelessWidget {
@@ -59,13 +59,13 @@ class _SignFormState extends State<SignForm> {
               labelText: 'Email',
               hintText: 'Enter your email',
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSuffixIcon(
-                svgIcon: 'assets/icons/email_icon.svg',
-              ),
-              contentPadding: const EdgeInsets.symmetric(
-                horizontal: 42,
-                vertical: 15,
-              ),
+              // suffixIcon: CustomSuffixIcon(
+              //   svgIcon: 'assets/icons/email_icon.svg',
+              // ),
+              // contentPadding: const EdgeInsets.symmetric(
+              //   horizontal: 42,
+              //   vertical: 15,
+              // ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(28),
                 borderSide: const BorderSide(color: Colors.grey),

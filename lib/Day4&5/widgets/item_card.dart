@@ -38,12 +38,12 @@ class ItemCard extends StatelessWidget {
                   style: itemCardDes,
                 ),
                 SpaceBtw(
-                  height: 20.0,
+                  height: 10.0,
                 ),
-                // Text(
-                //   model.price,
-                //   style: itemCardPrice,
-                // ),
+                Text(
+                  model.price,
+                  style: itemCardPrice,
+                ),
               ],
             ),
           ),

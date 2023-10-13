@@ -1,6 +1,20 @@
 import 'package:flutter_ui_challenges/Day4&5/model/model.dart';
 
 List<Model> models = [
+
+  Model(
+    name: 'Stylish Lamp',
+    image: [
+      'assets/images/04.png',
+      'assets/images/02.png',
+      'assets/images/03.png',
+      'assets/images/01.png',
+    ],
+    price: '\$20.00',
+    description: 'We have amazing Quality Lamp Wide range',
+    category: 'Lamp',
+  ),
+
   Model(
     name: 'Stylish Sofa',
     image: [
@@ -15,18 +29,7 @@ List<Model> models = [
     category: 'Sofa',
   ),
 
-  Model(
-    name: 'Stylish Lamp',
-    image: [
-      'assets/images/04.png',
-      'assets/images/02.png',
-      'assets/images/03.png',
-      'assets/images/01.png',
-    ],
-    price: '\$20.00',
-    description: 'We have amazing Quality Lamp Wide range',
-    category: 'Lamp',
-  ),
+
 
   Model(
     name: 'Wooden Chair',

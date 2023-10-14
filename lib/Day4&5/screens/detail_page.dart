@@ -89,7 +89,7 @@ class _DetailsPageState extends State<DetailsPage> {
                               child: Container(
                                 height: 40,
                                 width: 40,
-                                margin: EdgeInsets.symmetric(vertical: 5.0),
+                                margin: const EdgeInsets.symmetric(vertical: 5.0),
                                 child: Image.asset(widget.model.image[i]),
                               ),
                             ),
@@ -97,7 +97,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     right: 10.0,
                   ),
                   child: Align(
@@ -113,7 +113,7 @@ class _DetailsPageState extends State<DetailsPage> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Column(
               children: [
                 Row(
@@ -125,7 +125,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                     Container(
                       height: 40.0,
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50.0),
                         color: grey,
@@ -154,10 +154,11 @@ class _DetailsPageState extends State<DetailsPage> {
                             MaterialButton(
                               minWidth: 10.0,
                               onPressed: () {
-                                if (qty > 1)
+                                if (qty > 1) {
                                   setState(() {
                                     qty--;
                                   });
+                                }
                               },
                               child: Text(
                                 '-',
@@ -171,14 +172,14 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                   ],
                 ),
-                SpaceBtw(
+                const SpaceBtw(
                   height: 20.0,
                 ),
                 Text(
                   widget.model.description,
                   style: itemCardDes,
                 ),
-                SpaceBtw(
+                const SpaceBtw(
                   height: 20.0,
                 ),
                 Row(
@@ -187,7 +188,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     RichText(
                       text: TextSpan(
                         children: [
-                          TextSpan(
+                          const TextSpan(
                             text: 'Total Price\n',
                             style: subHeading,
                           ),
@@ -200,7 +201,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                     Container(
                       height: 40.0,
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       decoration: BoxDecoration(
                         color: green,
                         borderRadius: BorderRadius.circular(50.0),

@@ -28,7 +28,7 @@ class _TabBarButtonState extends State<TabBarButton> {
             },
             child: Container(
               height: 40.0,
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               decoration: BoxDecoration(
                 color: id == i ? grey : Colors.transparent,
                 borderRadius: BorderRadius.circular(50.0),

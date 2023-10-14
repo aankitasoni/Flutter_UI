@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day4&5/data/model_data.dart';
 import 'package:flutter_ui_challenges/Day4&5/screens/detail_page.dart';
 import 'package:flutter_ui_challenges/Day4&5/utils/space.dart';
 import 'package:flutter_ui_challenges/Day4&5/utils/text_style.dart';
@@ -60,7 +59,7 @@ class ItemCard extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.favorite_border_outlined,
               ),
             ),

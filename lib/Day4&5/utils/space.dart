@@ -8,8 +8,12 @@ class SpaceBtw extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: height != null? height:0.0,
-      width: width!= null ? width:0.0,
+
+      // height: height != null? height:0.0,
+      // width: width!= null ? width:0.0,
+
+      height: height ?? 0.0,
+      width: width ?? 0.0,
     );
   }
 }

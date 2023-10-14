@@ -16,7 +16,7 @@ class Day4And5HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,11 +36,11 @@ class Day4And5HomeScreen extends StatelessWidget {
             const SpaceBtw(height: 20),
             Container(
               height: 70.0,
-              child: TabBarButton(),
+              child: const TabBarButton(),
             ),
             Expanded(           // all size lega
               child: ListView.builder(
-                physics: BouncingScrollPhysics(),
+                physics: const BouncingScrollPhysics(),
                 itemCount: models.length,
                 itemBuilder: (builder, index) {
                   final mode1 = models[index];

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day4&5/assets/color.dart';
-import 'package:flutter_ui_challenges/Day4&5/assets/text_style.dart';
+import 'package:flutter_ui_challenges/Day4&5/utils/color.dart';
+import 'package:flutter_ui_challenges/Day4&5/utils/text_style.dart';
 import 'package:flutter_ui_challenges/Day4&5/data/tabbar_menu.dart';
 
 class TabBarButton extends StatefulWidget {

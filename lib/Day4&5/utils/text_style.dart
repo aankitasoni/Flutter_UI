@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day4&5/assets/color.dart';
+import 'package:flutter_ui_challenges/Day4&5/utils/color.dart';
 
 
 const TextStyle heading = TextStyle(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day4&5/assets/space.dart';
-import 'package:flutter_ui_challenges/Day4&5/assets/text_style.dart';
+import 'package:flutter_ui_challenges/Day4&5/utils/space.dart';
+import 'package:flutter_ui_challenges/Day4&5/utils/text_style.dart';
 import 'package:flutter_ui_challenges/Day4&5/model/model.dart';
 
 class ItemCard extends StatelessWidget {
@@ -24,12 +24,13 @@ class ItemCard extends StatelessWidget {
           Container(
             width: 180.0,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   model.name,
                   style: itemCardHeading,
                 ),
-                SpaceBtw(
+                const SpaceBtw(
                   height: 10.0,
                 ),
                 Text(
@@ -37,7 +38,7 @@ class ItemCard extends StatelessWidget {
                   maxLines: 3,
                   style: itemCardDes,
                 ),
-                SpaceBtw(
+                const SpaceBtw(
                   height: 10.0,
                 ),
                 Text(
@@ -45,6 +46,12 @@ class ItemCard extends StatelessWidget {
                   style: itemCardPrice,
                 ),
               ],
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.favorite_border_outlined,
             ),
           ),
         ],

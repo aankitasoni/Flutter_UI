@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day1/screens/day1_home_screen.dart';
 import 'package:flutter_ui_challenges/Day2/screens/day2_sign_in_screen.dart';
-import 'package:flutter_ui_challenges/Day4&5/screens/day4&5_home_screen.dart';
+
+import '../Day1_Onboarding_Screen/screens/day1_home_screen.dart';
+import '../Day4&5_Furniture_App/screens/day4&5_home_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

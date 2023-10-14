@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day4&5/screens/detail_page.dart';
-import 'package:flutter_ui_challenges/Day4&5/utils/space.dart';
-import 'package:flutter_ui_challenges/Day4&5/utils/text_style.dart';
-import 'package:flutter_ui_challenges/Day4&5/model/model.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/screens/detail_page.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/utils/space.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/utils/text_style.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/model/model.dart';
 
 class ItemCard extends StatelessWidget {
   final Model model;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day4&5/utils/color.dart';
-import 'package:flutter_ui_challenges/Day4&5/utils/text_style.dart';
-import 'package:flutter_ui_challenges/Day4&5/data/tabbar_menu.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/utils/color.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/utils/text_style.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/data/tabbar_menu.dart';
 
 class TabBarButton extends StatefulWidget {
   const TabBarButton({super.key});

@@ -1,4 +1,4 @@
-import 'package:flutter_ui_challenges/Day4&5/model/model.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/model/model.dart';
 
 List<Model> models = [
 

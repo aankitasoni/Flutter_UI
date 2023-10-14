@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day4&5/utils/color.dart';
-import 'package:flutter_ui_challenges/Day4&5/utils/space.dart';
-import 'package:flutter_ui_challenges/Day4&5/utils/text_style.dart';
-import 'package:flutter_ui_challenges/Day4&5/data/model_data.dart';
-import 'package:flutter_ui_challenges/Day4&5/widgets/item_card.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/utils/color.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/utils/space.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/utils/text_style.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/data/model_data.dart';
+import 'package:flutter_ui_challenges/Day4&5_Furniture_App/widgets/item_card.dart';
 
 import '../widgets/custom_app_bar.dart';
 import '../widgets/tabbar_button.dart';

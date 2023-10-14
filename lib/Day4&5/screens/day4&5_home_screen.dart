@@ -38,7 +38,7 @@ class Day4And5HomeScreen extends StatelessWidget {
               height: 70.0,
               child: TabBarButton(),
             ),
-            Expanded(          // all size lega
+            Expanded(           // all size lega
               child: ListView.builder(
                 physics: BouncingScrollPhysics(),
                 itemCount: models.length,
@@ -74,11 +74,25 @@ class Day4And5HomeScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     bottomNavButton(
-                        onPressed: () {},
-                        icon: Icons.menu,
-                      color: Colors.red,
+                      onPress: () {},
+                      icon: Icons.home_outlined,
+                    ),
+                    const SpaceBtw(
+                      width: 60,
+                    ),
+                    bottomNavButton(
+                      onPress: () {},
+                      icon: Icons.chat_outlined,
+                    ),
+                    const SpaceBtw(
+                      width: 60,
+                    ),
+                    bottomNavButton(
+                      onPress: () {},
+                      icon: Icons.person_outline_outlined,
                     ),
                   ],
                 ),
@@ -91,14 +105,16 @@ class Day4And5HomeScreen extends StatelessWidget {
   }
 
   IconButton bottomNavButton({
-    required Function() onPressed,
+    required Function() onPress,
     required IconData icon,
-    required Color color,
+    // required Color color,
   }) =>
       IconButton(
-        onPressed: () {},
-        icon: Icon(icon,
-          color: color,
+        onPressed: onPress,
+        icon: Icon(
+          icon,
+          color: Colors.red,
+          size: 40,
         ),
       );
 }

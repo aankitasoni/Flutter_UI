@@ -22,7 +22,7 @@ class CustomAppBar extends StatelessWidget {
             child: Container(
               height: 65.0,
               width: 50.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: green,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20.0),
@@ -31,7 +31,7 @@ class CustomAppBar extends StatelessWidget {
                   bottomRight: Radius.circular(50.0),
                 ),
               ),
-              child: Icon(
+              child: const Icon(
                 Icons.shopping_cart_outlined,
                 color: white,
               ),

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day2/screens/day2_sign_in_screen.dart';
-import 'package:flutter_ui_challenges/Day6&7_Plant_App/screens/day6&7_home_screen.dart';
-
 import '../Day1_Onboarding_Screen/screens/day1_home_screen.dart';
+import 'package:flutter_ui_challenges/Day2_Login_SignUp_Screen/main_screen/day2_home_screen.dart';
 import '../Day4&5_Furniture_App/screens/day4&5_home_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -14,9 +12,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<String> days = [
-    'Day 1',
+    'Day 1', // d
     'Day 2',
-    'Day 4 & 5',
+    'Day 4 & 5', //d
     'Day 6 & 7',
     'Day 8',
     'Day 9',
@@ -45,9 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List route = [
     const Day1HomeScreen(),
-    const Day2SignInScreen(),
+    const Day2HomeScreen(),
     const Day4And5HomeScreen(),
-    const Day6And7HomeScreen(),
   ];
 
   @override

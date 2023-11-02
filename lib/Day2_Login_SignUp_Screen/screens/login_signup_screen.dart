@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/Day2_Login_SignUp_Screen/screens/signup_screen.dart';
 
 import '../components/button.dart';
 import 'login_screen.dart';
-
 
 class LoginSignupScreen extends StatefulWidget {
   const LoginSignupScreen({super.key});
@@ -34,19 +34,30 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                       color: const Color.fromARGB(255, 10, 185, 121),
                     ),
                   ),
-                  Button(
+                  MyButton(
                     customColor: Colors.white.withOpacity(0.7),
                     text: "Sign In",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginScreen(),
+                          ));
+                    },
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  Button(
+                  MyButton(
                     customColor: Colors.white.withOpacity(0.7),
                     text: "Create an Account",
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpScreen(),
+                        ),
+                      );
                     },
                   )
                 ],

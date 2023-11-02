@@ -1,29 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day2_Login_SignUp_Screen/components/button.dart';
 import 'package:flutter_ui_challenges/Day2_Login_SignUp_Screen/components/text.dart';
-import 'package:flutter_ui_challenges/Day2_Login_SignUp_Screen/screens/signup_screen.dart';
+import 'package:flutter_ui_challenges/Day2_Login_SignUp_Screen/screens/login_screen.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+import '../components/button.dart';
+
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignUpScreenState extends State<SignUpScreen> {
   bool showPass = false;
+  bool showConfirm = false;
 
-  showPassword() {
+  showConfPress() {
     setState(() {
-      showPass = !showPass;
+      showConfirm != showConfirm;
     });
   }
 
-  bool checkTheBox = false;
-
-  check() {
+  showPassword() {
     setState(() {
-      checkTheBox = !checkTheBox;
+      showPass != showPass;
     });
   }
 
@@ -42,13 +42,17 @@ class _LoginScreenState extends State<LoginScreen> {
               Image.asset(
                 'assets/images/radio_wave_beta.png',
                 color: const Color.fromARGB(255, 10, 185, 121),
-                width: 300,
+                width: 250,
               ),
               const SizedBox(
                 height: 40,
               ),
-              const MyText(hintText: 'Email or Username'),
-              const SizedBox(height: 20),
+              const MyText(hintText: 'Name'),
+              const SizedBox(
+                height: 12,
+              ),
+              const MyText(hintText: "Email"),
+              const SizedBox(height: 12),
               MyText(
                 hintText: 'Password',
                 onPressed: showPassword,
@@ -58,56 +62,25 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 12,
               ),
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 25),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Theme(
-                          data: ThemeData(
-                            unselectedWidgetColor: Colors.grey[500],
-                          ),
-                          child: Checkbox(
-                            checkColor: Colors.white,
-                            value: checkTheBox ? true : false,
-                            onChanged: (value) {
-                              check();
-                            },
-                          ),
-                        ),
-                        const Text(
-                          'Remember Me',
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                    const Text(
-                      'Forget Password?',
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 10, 185, 121),
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
+              MyText(
+                hintText: 'Confirm Password',
+                onPressed: showConfPress,
+                obsecureText: showPass ? false : true,
+                icon: showPass ? Icons.visibility_off : Icons.visibility,
               ),
               const SizedBox(
-                height: 20,
+                height: 30,
               ),
               MyButton(
                 customColor: const Color.fromARGB(255, 10, 185, 121),
-                text: 'Sign In',
+                text: 'Sign Up',
                 onTap: () {},
               ),
               const SizedBox(
                 height: 20,
               ),
               const Text(
-                'or Sign In With',
+                'or Sign Up With',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -169,7 +142,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "Don't have an account",
+                    "Alredy have an account",
                     style: TextStyle(
                       color: Colors.white,
                     ),
@@ -182,11 +155,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SignUpScreen(),
+                          builder: (context) => LoginScreen(),
                         ),
                       );
                     },
-                    child: Text('REGISTER',
+                    child: Text('LOG IN',
                       style: TextStyle(
                         color: Color.fromARGB(255, 10, 185, 121),
                         fontWeight: FontWeight.bold,

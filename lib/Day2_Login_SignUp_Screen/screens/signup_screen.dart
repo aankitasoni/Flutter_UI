@@ -17,13 +17,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   showConfPress() {
     setState(() {
-      showConfirm != showConfirm;
+      showConfirm = !showConfirm;
     });
   }
 
   showPassword() {
     setState(() {
-      showPass != showPass;
+      showPass = !showPass;
     });
   }
 

@@ -2,4 +2,3 @@
 
   Exploring the full potential of Flutter by building diverse and engaging User Interfaces
 
-## Day 1

@@ -142,7 +142,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "Alredy have an account",
+                    "Already have an account",
                     style: TextStyle(
                       color: Colors.white,
                     ),
@@ -155,11 +155,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LoginScreen(),
+                          builder: (context) => const LoginScreen(),
                         ),
                       );
                     },
-                    child: Text('LOG IN',
+                    child: const Text(
+                      'LOG IN',
                       style: TextStyle(
                         color: Color.fromARGB(255, 10, 185, 121),
                         fontWeight: FontWeight.bold,

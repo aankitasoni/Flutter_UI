@@ -28,18 +28,24 @@ class MyText extends StatelessWidget {
         children: [
           Expanded(
             child: TextField(
-              decoration: InputDecoration(
-                border: InputBorder.none,
-                hintText: hintText,
-                hintStyle: TextStyle(
-                  color: Colors.white.withOpacity(0.5),
-                )
+              style: const TextStyle(
+                color: Color.fromARGB(255, 10, 185, 121),
+                fontWeight: FontWeight.bold,
               ),
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  hintText: hintText,
+                  hintStyle: TextStyle(
+                    color: Colors.white.withOpacity(0.5),
+                  )),
               obscureText: obsecureText,
-              
             ),
           ),
-          IconButton(onPressed: onPressed, icon: Icon(icon), color: const Color.fromARGB(255, 10, 185, 121),),
+          IconButton(
+            onPressed: onPressed,
+            icon: Icon(icon),
+            color: const Color.fromARGB(255, 10, 185, 121),
+          ),
         ],
       ),
     );

@@ -9,9 +9,34 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
+  PageController pageController = PageController();
+  int selectIndex = 0;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: PageView.builder(
+        itemCount: child.length,
+        controller: pageController,
+        onPageChanged: (value) => setState(() => selectIndex = value),
+        itemBuilder: (itemBuilder, index) {
+          return Container(
+            child: child[index],
+          );
+        },
+      ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 0,
+        child: SizedBox(
+          height: 60,
+          child: Row(
+            children: [
+
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -20,5 +45,4 @@ List<Widget> child = [
   Container(color: Colors.white),
   Container(color: Colors.white),
   Container(color: Colors.white),
-
 ];

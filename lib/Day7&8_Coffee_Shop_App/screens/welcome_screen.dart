@@ -66,7 +66,7 @@ class WelcomeScreen extends StatelessWidget {
                         horizontal: 30,
                       ),
                       child: Text(
-                        'Get Start',
+                        'Get Started',
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,

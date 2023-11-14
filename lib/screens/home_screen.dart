@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/Day13&14_Notes_App/main_screen/day13&14_home_screen.dart';
 import 'package:flutter_ui_challenges/Day3_Plant_App/main_screen/day3_home_screen.dart';
 import 'package:flutter_ui_challenges/Day6_E-Commerce_App/main_screen/Day6_home_screen.dart';
 import 'package:flutter_ui_challenges/Day7&8_Coffee_Shop_App/main_screen/day7&8_home_screen.dart';
@@ -25,8 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     'Day 7 & 8',
     'Day 9 & 10', //d
     'Day 11 & 12',
-    'Day 13',
-    'Day 14',
+    'Day 13 & 14',
     'Day 15',
     'Day 16',
     'Day 17',
@@ -54,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const Day7And8HomeScreen(),
     const Day9And10HomeScreen(),
     const Day11And12HomeScreen(),
+    const Day13And14HomeScreen(),
   ];
 
   @override

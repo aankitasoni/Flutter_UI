@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
     'Day 6',
     'Day 7 & 8',
     'Day 9 & 10', //d
-    'Day 11 & 12',
+    'Day 11 & 12', //d
     'Day 13 & 14',
     'Day 15',
     'Day 16',

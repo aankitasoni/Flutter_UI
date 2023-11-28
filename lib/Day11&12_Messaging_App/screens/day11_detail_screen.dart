@@ -25,7 +25,7 @@ class _Day11DetailScreenState extends State<Day11DetailScreen> {
           Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 50, left: 5, right: 5),
+                padding: const EdgeInsets.only(top: 20, left: 5, right: 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -114,7 +114,7 @@ class _Day11DetailScreenState extends State<Day11DetailScreen> {
             ],
           ),
           Positioned(
-            top: 170,
+            top: 160,
             left: 0,
             right: 0,
             child: Container(

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day9&10_Wallpaper_App/widgets/ImagesWidget.dart';
+
+import '../widgets/ImagesWidget.dart';
+
 
 class FavPage extends StatelessWidget {
   const FavPage({super.key});

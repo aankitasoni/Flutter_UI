@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day7&8_Coffee_Shop_App/screens/detail_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'detail_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});

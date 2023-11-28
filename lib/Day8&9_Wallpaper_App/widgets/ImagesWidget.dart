@@ -1,6 +1,8 @@
 import 'package:dismissible_page/dismissible_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/Day9&10_Wallpaper_App/screens/day9_image_screen.dart';
+
+import '../screens/day9_image_screen.dart';
+
 
 class ImageWidget extends StatelessWidget {
   const ImageWidget({super.key});
